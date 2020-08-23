@@ -57,7 +57,7 @@ class EmpleadosApplicationTests {
 	
 
 @Test
-	public void probarEliminar() {
+	public void probarEliminar() throws Exception{
 	Empleado empleado= new Empleado(30, "Angel Lara", "Albañil", null);
 	servicio.borrar(empleado);
 	verify(repo, times(1)).delete(empleado);
