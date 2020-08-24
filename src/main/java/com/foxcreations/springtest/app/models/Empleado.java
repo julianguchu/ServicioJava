@@ -36,7 +36,7 @@ public class Empleado implements Serializable  {
 	@Column
 	private  String  funtion;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="boss", nullable = true) 
 	private  Empleado boss;
 	
